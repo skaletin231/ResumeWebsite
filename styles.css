@@ -1,5 +1,61 @@
 p 
 {
-    font-size: 30px;
-    color: green;
+    font-size: 1.2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+hr
+{
+    color: black;
+    border-color: black;
+}
+
+.section
+{
+    margin: 2em 0;
+}
+
+span, li
+{
+    font-size: 1.2em;
+}
+
+.bigger-text
+{
+    font-size: 1.3em;
+}
+
+/*RESUME PAGE USS*/
+.resume-page
+{
+    flex-grow: 1;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width:1px;
+    border-color: antiquewhite;
+}
+
+.resume-container
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-info
+{
+    font-size: 1.4em;
+}
+
+.spaced-line
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    margin-top: .5em;
+    margin-bottom: 1.5em;
 }
