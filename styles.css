@@ -52,6 +52,7 @@ span, li
 {
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 ul
