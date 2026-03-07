@@ -27,6 +27,101 @@ span, li
     font-size: 1.3rem;
 }
 
+/*Main Page*/
+
+.my-image
+{
+    border-radius: 50%;
+    max-width: 300px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-page
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(173, 255, 251, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page .container
+{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    gap: 1em;
+}
+
+.main-page .row
+{
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond
+{
+    width: 1em;
+    height: 1em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    rotate: 45deg;
+}
+
+.row a
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px 20px;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+}
+
+.row a:visited
+{
+    color: black;
+}
+
+.row a:hover
+{
+    border-color: purple;
+    color: purple;
+    transition: all 0.5s ease;
+    background-size: 80% 2px;
+}
+
+.main-page .contact-info
+{
+    margin-top: auto;
+    margin-bottom: 2em;
+}
+
+.main-page .container p
+{
+    text-align: center;
+}
+
 /*RESUME PAGE USS*/
 .resume-page
 {
@@ -76,13 +171,45 @@ ul
 /*PORTFOLIO PAGE USS*/
 .slide {
     display: none;
+    align-items: center;
 }
 
 .slide.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-.example-section
+.slide iframe {
+    width: 100%;
+    height:auto;
+    aspect-ratio: 12.95 / 9;
+}
+
+.dot-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot
+{
+    background-color: gray;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.dot.active
+{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+}
+
+.top-half
 {
     display: flex;
     align-items: center;
@@ -96,6 +223,8 @@ ul
     flex: 1;
     flex-direction: column;
     align-items: center;
+    max-width: 600px;
+    min-width: 200px;
 }
 
 .right,
@@ -105,4 +234,38 @@ ul
     font-size: 24px;
     padding: 10px 15px;
     cursor: pointer;
+}
+
+.game
+{
+    display: none;
+}
+
+.game.active
+{
+    display: block;
+}
+
+.top-buttons
+{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.content-button
+{
+    padding: .1em;
+    border-style: solid;
+    border-width: .1em;
+    border-color: black;
+    border-radius: 20%;
+    background-color: whitesmoke;
+    opacity: .5;
+}
+
+.content-button.active
+{
+    background-color: whitesmoke;
+    opacity: 1;
 }

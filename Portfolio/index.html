@@ -7,36 +7,168 @@
     <script src="../Javascript/carousel.js" defer></script>
 </head>
 <body class="portfolio-page">
-    <div>
-        <h1><strong>Overview:</strong></h1>
-        <p>This project was created alone over a period of approximately 6 months. It is a digital implementation of the physical board game 7 Wonders Duel that handles all gameplay and rules functionality for the user.</p>
-        
-        <h1><strong>Key Features Implemented:</strong></h1>
-        <ul>
-            <li><strong>Unity Events:</strong> Enabled loose coupling of components, making the system more modular and easily expandable for future changes.</li>
-            <li><strong>Interfaces:</strong> Used to create generic reusable abilities, allowing for easy implementation of new cards with minimal additional code.</li>
-            <li><strong>Polymorphism:</strong> Allowed different card types to handle their own independent behaviors, reducing the need for other systems to differentiate them.</li>
-        </ul>
+    <div class="top-buttons">
+        <button class="content-button active" aria-label="Game 1">
+            Game 1
+        </button>
+        <button class="content-button" aria-label="Game 2">
+            Game 2
+        </button>
+        <button class="content-button" aria-label="Game 3">
+            Game 3
+        </button>
     </div>
-    <div class="example-section">
-        <button class="left" aria-label="Previous slide">&lt;</button>
-        <div class="carousel-container">
-            <div class="slide active">
-                <iframe width="420" height="315" title="Gameplay: Start of game" src="https://www.youtube.com/embed/f6-rgwoGal0?autoplay=1&mute=1&playlist=f6-rgwoGal0&loop=1"></iframe>
-                <p>Game start involves two players selecting their starting wonders from a randomly selected group of eight wonders.</p>
+    <div class="content-section">
+        <div class="game active"> <!-- 7 wonders -->
+            <div>
+                <h1><strong>Overview:</strong></h1>
+                <p>This project was created alone over a period of approximately 6 months. It is a digital implementation of the physical board game 7 Wonders Duel that handles all gameplay and rules functionality for the user.</p>
+                
+                <h1><strong>Key Takeaways:</strong></h1>
+                <ul>
+                    <li><strong>Unity Events:</strong> Enabled loose coupling of components, making the system more modular and easily expandable for future changes.</li>
+                    <li><strong>Interfaces:</strong> Used to create generic reusable abilities, allowing for easy implementation of new cards with minimal additional code.</li>
+                    <li><strong>Polymorphism:</strong> Allowed different card types to handle their own independent behaviors, reducing the need for other systems to differentiate them.</li>
+                </ul>
             </div>
+            <div class="example-section">
+                <div class="top-half">
+                    <button class="left" aria-label="Previous slide">&lt;</button>
+                    <div class="carousel-container">
+                        <div class="slide active">
+                            <iframe width="420" height="315" title="Gameplay: Start of game" src="https://www.youtube.com/embed/f6-rgwoGal0?autoplay=1&mute=1&playlist=f6-rgwoGal0&loop=1"></iframe>
+                            <p>Game start involves two players selecting their starting wonders from a randomly selected group of eight wonders.</p>
+                        </div>
 
-            <div class="slide">
-                <iframe width="420" height="315" title="Gameplay: Interacting with a card" src="https://www.youtube.com/embed/RU3wMfgby-0?autoplay=1&mute=1&playlist=RU3wMfgby-0&loop=1"></iframe>
-                <p>The cards all extend the same base class and use polymorphism so all systems can interact with them without needing to differentiate type.</p>
-            </div>
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Interacting with a card" src="https://www.youtube.com/embed/RU3wMfgby-0?autoplay=1&mute=1&playlist=RU3wMfgby-0&loop=1"></iframe>
+                            <p>The cards all extend the same base class and use polymorphism so all systems can interact with them without needing to differentiate type.</p>
+                        </div>
 
-            <div class="slide">
-                <iframe width="420" height="315" title="Gameplay: Building a wonder" src="https://www.youtube.com/embed/r1LvSKn9Qxw?autoplay=1&mute=1&playlist=r1LvSKn9Qxw&loop=1"></iframe>
-                <p>Effects were created using a base interface that each effect class inherits. Wonders would then trigger any number of these effects one at a time allowing for rapid creation of new wonders</p>
-            </div>
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Building a wonder" src="https://www.youtube.com/embed/r1LvSKn9Qxw?autoplay=1&mute=1&playlist=r1LvSKn9Qxw&loop=1"></iframe>
+                            <p>Effects were created using a base interface that each effect class inherits. Wonders would then trigger any number of these effects one at a time allowing for rapid creation of new wonders</p>
+                        </div>
+                    </div>
+                    <button class="right" aria-label="Next slide">&gt;</button>
+                </div>
+
+                <div class="bottom-half">
+                    <div class="dot-container">
+                        <div class="dot active">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        </div>
+                </div>
+            </div>            
         </div>
-        <button class="right" aria-label="Next slide">&gt;</button>
+
+        <div class="game">  <!-- song game -->
+            <div>
+                <h1><strong>Overview:</strong></h1>
+                <p>This was the final project of a college game programming course. Working in a group of three students, we developed a 3/4 view action game with multipl enemies, levels, and buffs.</p>
+                
+                <h1><strong>Key Takeaways:</strong></h1>
+                <ul>
+                    <li><strong>Enemy State Machines:</strong> One boss was developed with multiple attacks and animations using a state based system. This method made the enemies functionality easy to extend.</li>
+                    <li><strong>Time Management:</strong> This project was assigned day one of class and due the final day. Working in a team of three, when had to quickly learn to manage our time, split work cleanly, and find a work flow that would allow us to finish a full game in just under four months.</li>
+                </ul>
+            </div>
+            <div class="example-section">
+                <div class="top-half">
+                    <button class="left" aria-label="Previous slide">&lt;</button>
+                    <div class="carousel-container">
+                        <div class="slide active">
+                            <iframe width="420" height="315" title="Gameplay: Boss Fight" src="https://www.youtube.com/embed/CtggDysWfuU?enablejsapi=1&autoplay=1&mute=1&playlist=CtggDysWfuU&loop=1"></iframe>
+                            <p>This boss was implamented with four distinct states that controlled the entire fight and allowed for more attacks to be easily added on when time permited.</p>
+                        </div>
+
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Enemies" src="https://www.youtube.com/embed/VlyQTNCPtIw?enablejsapi=1&autoplay=1&mute=1&playlist=VlyQTNCPtIw&loop=1"></iframe>
+                            <p>I developed multiple enemies with different attacks that all inherit from the same base script.</p>
+                        </div>
+
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Buffs" src="https://www.youtube.com/embed/k_ZAk3pebKI?enablejsapi=1&autoplay=1&mute=1&playlist=k_ZAk3pebKI&loop=1"></iframe>
+                            <p>Multiple buffs were developed that each interact with the users in different ways.</p>
+                        </div>
+                    </div>
+                    <button class="right" aria-label="Next slide">&gt;</button>
+                </div>
+
+                <div class="bottom-half">
+                    <div class="dot-container">
+                        <div class="dot active">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        </div>
+                </div>
+            </div>            
+        </div>
+        
+        <div class="game">  <!-- other game? -->
+            <div>
+                <h1><strong>Overview:</strong></h1>
+                <p>This was the final project of a college game programming course. Working in a group of three students, we developed a 3/4 view action game with multipl enemies, levels, and buffs.</p>
+                
+                <h1><strong>Key Takeaways:</strong></h1>
+                <ul>
+                    <li><strong>Enemy State Machines:</strong> One boss was developed with multiple attacks and animations using a state based system. This method made the enemies functionality easy to extend.</li>
+                    <li><strong>Time Management:</strong> This project was assigned day one of class and due the final day. Working in a team of three, when had to quickly learn to manage our time, split work cleanly, and find a work flow that would allow us to finish a full game in just under four months.</li>
+                </ul>
+            </div>
+            <div class="example-section">
+                <div class="top-half">
+                    <button class="left" aria-label="Previous slide">&lt;</button>
+                    <div class="carousel-container">
+                        <div class="slide active">
+                            <iframe width="420" height="315" title="Gameplay: Boss Fight" src="https://www.youtube.com/embed/CtggDysWfuU?autoplay=1&mute=1&playlist=CtggDysWfuU&loop=1"></iframe>
+                            <p>This boss was implamented with four distinct states that controlled the entire fight and allowed for more attacks to be easily added on when time permited.</p>
+                        </div>
+
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Enemies" src="https://www.youtube.com/embed/VlyQTNCPtIw?autoplay=1&mute=1&playlist=VlyQTNCPtIw&loop=1"></iframe>
+                            <p></p>
+                        </div>
+
+                        <div class="slide">
+                            <iframe width="420" height="315" title="Gameplay: Buffs" src="https://www.youtube.com/embed/k_ZAk3pebKI?autoplay=1&mute=1&playlist=k_ZAk3pebKI&loop=1"></iframe>
+                            <p>Multiple buffs were developed that each interact with the users in different ways.</p>
+                        </div>
+                    </div>
+                    <button class="right" aria-label="Next slide">&gt;</button>
+                </div>
+
+                <div class="bottom-half">
+                    <div class="dot-container">
+                        <div class="dot active">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        <div class="dot">
+
+                        </div>
+                        </div>
+                </div>
+            </div>            
+        </div>
     </div>
+
+
+
 </body>
 </html>
