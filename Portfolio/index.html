@@ -4,9 +4,39 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="../Javascript/carousel.js" defer></script>
 </head>
 <body class="portfolio-page">
-    <h1>Test Portfolio</h1>
-    <p>Test Paragraph1</p>
+    <div>
+        <h1><strong>Overview:</strong></h1>
+        <p>This project was created alone over a period of approximately 6 months. It is a digital implementation of the physical board game 7 Wonders Duel that handles all gameplay and rules functionality for the user.</p>
+        
+        <h1><strong>Key Features Implemented:</strong></h1>
+        <ul>
+            <li><strong>Unity Events:</strong> Enabled loose coupling of components, making the system more modular and easily expandable for future changes.</li>
+            <li><strong>Interfaces:</strong> Used to create generic reusable abilities, allowing for easy implementation of new cards with minimal additional code.</li>
+            <li><strong>Polymorphism:</strong> Allowed different card types to handle their own independent behaviors, reducing the need for other systems to differentiate them.</li>
+        </ul>
+    </div>
+    <div class="example-section">
+        <button class="left" aria-label="Previous slide">&lt;</button>
+        <div class="carousel-container">
+            <div class="slide active">
+                <iframe width="420" height="315" title="Gameplay: Start of game" src="https://www.youtube.com/embed/f6-rgwoGal0?autoplay=1&mute=1&playlist=f6-rgwoGal0&loop=1"></iframe>
+                <p>Game start involves two players selecting their starting wonders from a randomly selected group of eight wonders.</p>
+            </div>
+
+            <div class="slide">
+                <iframe width="420" height="315" title="Gameplay: Interacting with a card" src="https://www.youtube.com/embed/RU3wMfgby-0?autoplay=1&mute=1&playlist=RU3wMfgby-0&loop=1"></iframe>
+                <p>The cards all extend the same base class and use polymorphism so all systems can interact with them without needing to differentiate type.</p>
+            </div>
+
+            <div class="slide">
+                <iframe width="420" height="315" title="Gameplay: Building a wonder" src="https://www.youtube.com/embed/r1LvSKn9Qxw?autoplay=1&mute=1&playlist=r1LvSKn9Qxw&loop=1"></iframe>
+                <p>Effects were created using a base interface that each effect class inherits. Wonders would then trigger any number of these effects one at a time allowing for rapid creation of new wonders</p>
+            </div>
+        </div>
+        <button class="right" aria-label="Next slide">&gt;</button>
+    </div>
 </body>
 </html>

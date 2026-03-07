@@ -38,6 +38,11 @@ span, li
     border-color: antiquewhite;
 }
 
+.header span
+{
+    font-size: 1.4rem;
+}
+
 .resume-container
 {
     margin-left: 10px;
@@ -66,4 +71,38 @@ ul
 {
     margin-top: .5rem;
     margin-bottom: 1.5rem;
+}
+
+/*PORTFOLIO PAGE USS*/
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.example-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.carousel-container
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right,
+.left
+{
+    flex-shrink: 0;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
 }
