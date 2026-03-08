@@ -1,6 +1,6 @@
 p 
 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
@@ -32,10 +32,23 @@ span, li
 .my-image
 {
     border-radius: 50%;
-    max-width: 300px;
-    border-width: 4px;
+    max-width: 250px;
+    border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: rgb(200, 200, 200);
+}
+
+.my-image-container
+{
+    display: flex;
+    border-radius: 50%;
+    border-width: 2px;
+    padding: 3px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 html, body {
@@ -61,35 +74,54 @@ html, body {
     flex-direction: column;
     align-items: center;
     max-width: 800px;
-    gap: 1em;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
 .main-page .row
 {
     display: flex;
-    gap: 5em;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
+    margin-top: 1.5rem;
+}
+
+.main-page h1
+{
+    font-size: 3rem;
+    color: rgba(17, 63, 113, 1);
 }
 
 .diamond
 {
-    width: 1em;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
     border-width: 2px;
     border-style: solid;
     border-color: black;
     rotate: 45deg;
 }
 
+@media only screen and (max-width: 600px) {
+    .diamond {
+        display: none; /* Hides the element completely */
+    }
+
+    .main-page .row
+    {
+        gap: 2.5rem;
+    }
+}
+
 .row a
 {
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    color: rgba(17, 63, 113, 1);
     padding: 10px 20px;
-    font-size: 2em;
-    color: black;
+    font-size: 2rem;
+    color: rgba(17, 63, 113, 1);
     text-decoration: none;
 
     background-image: linear-gradient(currentColor, currentColor);
@@ -98,15 +130,20 @@ html, body {
     background-repeat: no-repeat;
 }
 
+.contact-info span
+{
+    font-size: 1.4rem;
+}
+
 .row a:visited
 {
-    color: black;
+    color: rgba(4, 0, 77, 1);
 }
 
 .row a:hover
 {
-    border-color: purple;
-    color: purple;
+    border-color: rgba(151, 71, 255, 1);
+    color: rgba(151, 71, 255, 1);
     transition: all 0.5s ease;
     background-size: 80% 2px;
 }
@@ -114,7 +151,8 @@ html, body {
 .main-page .contact-info
 {
     margin-top: auto;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 
 .main-page .container p
@@ -214,7 +252,7 @@ ul
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .carousel-container
@@ -250,14 +288,14 @@ ul
 {
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 3rem;
 }
 
 .content-button
 {
-    padding: .1em;
+    padding: .1rem;
     border-style: solid;
-    border-width: .1em;
+    border-width: .1rem;
     border-color: black;
     border-radius: 20%;
     background-color: whitesmoke;
