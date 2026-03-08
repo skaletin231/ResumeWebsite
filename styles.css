@@ -16,7 +16,7 @@ hr
     margin: 2rem 0;
 }
 
-span, li
+.portfolio-page span, li
 {
     font-size: 1.2rem;
     flex-shrink: 0;
@@ -32,7 +32,7 @@ span, li
 .my-image
 {
     border-radius: 50%;
-    max-width: 250px;
+    max-width: 10.25rem;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(200, 200, 200);
@@ -50,15 +50,26 @@ span, li
     justify-content: center;
     align-items: center;
 }
-
+/*x * 1440px i want that to be 16px*/
 html, body {
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0;
+    font-size: clamp(14px, 1.11vw, 20px);
 }
 
-html
+.alegreya-sans /*buttons*/
 {
-    
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.inter /*body / links*/
+{
+    font-family: "Inter", sans-serif;
+}
+
+.cantata-one /*header*/
+{
+    font-family: "Cantata One", sans-serif;
 }
 
 .main-page
@@ -74,11 +85,11 @@ html
 
 .main-page .container
 {
-    margin-top: 20vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 46rem;
     gap: 1rem;
     padding: 0 1rem;
 }
@@ -94,7 +105,7 @@ html
 
 .main-page h1
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgba(17, 63, 113, 1);
 }
 
@@ -104,7 +115,7 @@ html
     height: 1rem;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
+    color: rgba(17, 63, 113, 1);
     rotate: 45deg;
 }
 
@@ -124,20 +135,20 @@ html
     border-style: solid;
     border-width: 2px;
     color: rgba(17, 63, 113, 1);
-    padding: 10px 20px;
-    font-size: 2rem;
+    padding: 10px 0;
+    font-size: 1.25rem;
     color: rgba(17, 63, 113, 1);
     text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    width: 6.8rem;
+    text-align: center;
 
     background-image: linear-gradient(currentColor, currentColor);
     background-size: 0% 2px;
     background-position: 50% 90%;
     background-repeat: no-repeat;
-}
-
-.contact-info span
-{
-    font-size: 1.4rem;
 }
 
 .row a:visited
@@ -155,14 +166,15 @@ html
 
 .main-page .contact-info
 {
-    margin-top: auto;
-    margin: 2rem 0;
+    margin: auto 0 2rem 0;
     padding: 0 1rem;
+    font-size: .82rem;
 }
 
 .main-page .container p
 {
     text-align: center;
+    font-size: 1rem;
 }
 
 .tiny-spacing
