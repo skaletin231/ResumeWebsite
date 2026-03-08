@@ -146,10 +146,26 @@ html, body {
     text-align: center;
 
     background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0rem .125rem;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+}
+
+/* .row a.portfolio
+{
+    background-image: linear-gradient(currentColor, currentColor);
     background-size: 0% 2px;
     background-position: 50% 90%;
     background-repeat: no-repeat;
 }
+
+.row a.resume
+{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+} */
 
 .row a:visited
 {
@@ -161,7 +177,12 @@ html, body {
     border-color: rgba(151, 71, 255, 1);
     color: rgba(151, 71, 255, 1);
     transition: all 0.5s ease;
-    background-size: 80% 2px;
+    background-size: 5.4rem .125rem;
+}
+
+.row a.resume:hover
+{
+    background-size: 4rem .125rem;
 }
 
 .main-page .contact-info
@@ -179,7 +200,7 @@ html, body {
 
 .tiny-spacing
 {
-    margin: 0 0rem;
+    margin: 0 .5rem;
 }
 
 /*RESUME PAGE USS*/
