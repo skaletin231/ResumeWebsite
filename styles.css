@@ -72,7 +72,8 @@ html, body {
     font-family: "Cantata One", sans-serif;
 }
 
-.main-page
+.main-page,
+.resume-page
 {
     display: flex;
     align-items: center;
