@@ -140,11 +140,10 @@ li
     }
 }
 
-.row a
+.hover-button
 {
     border-style: solid;
     border-width: 2px;
-    color: rgba(17, 63, 113, 1);
     padding: 10px 0;
     font-size: 1.25rem;
     color: rgba(17, 63, 113, 1);
@@ -161,28 +160,12 @@ li
     background-repeat: no-repeat;
 }
 
-/* .row a.portfolio
-{
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0% 2px;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-}
-
-.row a.resume
-{
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0% 2px;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-} */
-
-.row a:visited
+.hover-button:visited
 {
     color: rgba(4, 0, 77, 1);
 }
 
-.row a:hover
+.hover-button:hover
 {
     border-color: rgba(151, 71, 255, 1);
     color: rgba(151, 71, 255, 1);
@@ -190,7 +173,7 @@ li
     background-size: 5.4rem .125rem;
 }
 
-.row a.resume:hover
+.hover-button.resume:hover
 {
     background-size: 4rem .125rem;
 }
@@ -222,6 +205,35 @@ li
     margin-right: auto;
     border-width:1px;
     border-color: antiquewhite;
+}
+
+.return-home
+{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.return-home:visited
+{
+    color: black;
+}
+
+.return-home:hover
+{
+    color: rgba(151, 71, 255, 1);
+}
+
+.return-to-top
+{
+    width: 12rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+.return-to-top:hover
+{
+    background-size: 10.5rem .125rem;
 }
 
 .resume-page h1
