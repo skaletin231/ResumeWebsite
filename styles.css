@@ -1,7 +1,7 @@
 .background
 {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     position: fixed;
     z-index: -10;
 
@@ -13,6 +13,12 @@ p
     font-size: 1.3rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    line-height: 1.75rem;
+}
+
+li
+{
+    line-height: 1.75rem;
 }
 
 hr
@@ -67,17 +73,19 @@ html, body {
     font-size: clamp(14px, 1.11vw, 20px);
 }
 
-.alegreya-sans /*buttons*/
-{
-    font-family: "Alegreya Sans", sans-serif;
-}
-
 .inter, /*body / links*/
 .resume-page p,
 .resume-page h2,
-li
+li,
+.portfolio-page p
 {
     font-family: "Inter", sans-serif;
+}
+
+.alegreya-sans,
+.portfolio-page h2 /*buttons*/
+{
+    font-family: "Alegreya Sans", sans-serif;
 }
 
 .cantata-one /*header*/
@@ -86,7 +94,8 @@ li
 }
 
 .main-page,
-.resume-page
+.resume-page,
+.portfolio-page
 {
     display: flex;
     align-items: center;
@@ -160,6 +169,21 @@ li
     background-repeat: no-repeat;
 }
 
+button.hover-button
+{
+    padding: 15px 0;
+    border-color: rgba(17, 63, 113, 1);
+    width: 9rem;
+    background-color: transparent;
+}
+
+button.hover-button.active
+{
+    border-color: rgba(151, 71, 255, 1);
+    color: rgba(151, 71, 255, 1);
+    background-size: 5.1rem .125rem;
+}
+
 .hover-button:visited
 {
     color: rgba(4, 0, 77, 1);
@@ -171,6 +195,11 @@ li
     color: rgba(151, 71, 255, 1);
     transition: all 0.5s ease;
     background-size: 5.4rem .125rem;
+}
+
+button.hover-button:hover
+{
+    background-size: 5.1rem .125rem;
 }
 
 .hover-button.resume:hover
@@ -197,16 +226,6 @@ li
 }
 
 /*RESUME PAGE USS*/
-.resume-page
-{
-    flex-grow: 1;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-width:1px;
-    border-color: antiquewhite;
-}
-
 .return-home
 {
     color: black;
@@ -236,14 +255,15 @@ li
     background-size: 10.5rem .125rem;
 }
 
-.resume-page h1
+.resume-page h1,
+.portfolio-page h1
 {
     font-size: 3rem;
     color: rgba(17, 63, 113, 1);
     margin-bottom: 0;
 }
 
-.resume-page .section-header
+.section-header
 {
     font-size: 2.25rem;
     color: rgba(17, 63, 113, 1);
@@ -261,25 +281,20 @@ hr
     border-color: rgba(17, 63, 113, 1);
 }
 
-/* .resume-container
-{
-    margin-top: 15vh;
-    margin-left: 10px;
-    margin-right: 10px;
-} */
-
 .resume-container
 {
     margin: 15vh .625rem 0 .625rem;
     max-width: 46rem;
 }
 
-.resume-page p
+.resume-page p,
+.portfolio-page p
 {
     font-size: 1.25rem;
 }
 
-.resume-page li
+.resume-page li,
+.portfolio-page li
 {
     font-size: 1.25rem;
 }
@@ -301,6 +316,12 @@ ul
 }
 
 /*PORTFOLIO PAGE USS*/
+.portfolio-page .container
+{
+    margin: 15vh .625rem 0 .625rem;
+    max-width: 46rem;
+}
+
 .slide {
     display: none;
     align-items: center;
@@ -363,9 +384,24 @@ ul
 .left
 {
     flex-shrink: 0;
-    font-size: 24px;
-    padding: 10px 15px;
+    font-size: 1.8rem;
+    height: 3.372rem;
+    width: 3.372rem;
     cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+
+    padding-bottom: .2rem;
+}
+
+.left
+{
+    padding-right: 8.4px;
+}
+
+.right
+{
+    padding-left: 8.4px;
 }
 
 .game
@@ -381,23 +417,12 @@ ul
 .top-buttons
 {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     gap: 3rem;
 }
 
-.content-button
+.content-section
 {
-    padding: .1rem;
-    border-style: solid;
-    border-width: .1rem;
-    border-color: black;
-    border-radius: 20%;
-    background-color: whitesmoke;
-    opacity: .5;
-}
-
-.content-button.active
-{
-    background-color: whitesmoke;
-    opacity: 1;
+    margin-bottom: 2rem;
 }
