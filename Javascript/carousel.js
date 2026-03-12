@@ -3,40 +3,64 @@ const contentButtons = document.querySelectorAll(".content-button");
 let currentContent = 0;
 
 gameContent.forEach(game => {
-    const slides = game.querySelectorAll(".slide");
-    const dots = game.querySelectorAll(".dot");
+    const diamonds = game.querySelectorAll(".diamond");
+    const media = game.querySelectorAll("iframe");
+    const description = game.querySelectorAll(".description");
+
+    media.forEach(frame => {
+        frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
+    });
 
     let currentSlide = 0;
 
+    diamonds.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            OpenSlide(index);
+        });
+    });
+
     function OpenSlide(index)
     {
-        slides[currentSlide].classList.remove("active");
-        dots[currentSlide].classList.remove("active");
+        media[currentSlide].classList.remove("active");
+        description[currentSlide].classList.remove("active");
+        diamonds[currentSlide].classList.remove("active");
+
+        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
 
         currentSlide = index;
-        slides[currentSlide].classList.add("active");
-        dots[currentSlide].classList.add("active");
+
+        media[currentSlide].classList.add("active");
+        description[currentSlide].classList.add("active");
+        diamonds[currentSlide].classList.add("active");
+
+        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0,true]}',"*");
+        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*");
     }
 
-    game.querySelector(".right").onclick = () => {
-        let nextPage = (currentSlide + 1) % slides.length;
+    function GoRight()
+    {
+        let nextPage = (currentSlide + 1) % media.length;
         OpenSlide(nextPage);
-    };
+    }
 
-    game.querySelector(".left").onclick = () => {
+    function GoLeft()
+    {
         let nextPage = currentSlide - 1;
         if (nextPage < 0)
         {
-            nextPage = slides.length-1;
+            nextPage = media.length-1;
         }
         OpenSlide(nextPage);
-    };    
+    }
+
+    game.querySelector(".right").addEventListener("click", GoRight)
+
+    game.querySelector(".left").addEventListener("click", GoLeft)
 })
 
 
 contentButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        console.log("clicked");
         contentButtons[currentContent].classList.remove("active");
         gameContent[currentContent].classList.remove("active");
 
