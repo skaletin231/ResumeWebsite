@@ -377,6 +377,11 @@ ul
     min-width: 200px;
 }
 
+button.content-button
+{
+    width: 12rem;
+}
+
 .media-container
 {
     display: flex;
@@ -384,7 +389,7 @@ ul
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 9;
-    width: 100%;
+    padding: 0 5rem;
 }
 
 .example-section > div
@@ -397,8 +402,8 @@ ul
     border-color: rgba(17, 63, 113, 1);
     border-width: 3px;
     border-style: solid;
-    margin: 0 5rem;
 
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }

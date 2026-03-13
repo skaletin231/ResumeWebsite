@@ -4,12 +4,12 @@ let currentContent = 0;
 
 gameContent.forEach(game => {
     const diamonds = game.querySelectorAll(".diamond");
-    const media = game.querySelectorAll("iframe");
+    const media = game.querySelectorAll("video");
     const description = game.querySelectorAll(".description");
 
-    media.forEach(frame => {
-        frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
-    });
+    // media.forEach(frame => {
+    //     frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
+    // });
 
     let currentSlide = 0;
 
@@ -25,7 +25,7 @@ gameContent.forEach(game => {
         description[currentSlide].classList.remove("active");
         diamonds[currentSlide].classList.remove("active");
 
-        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
+        //media[currentSlide].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*");
 
         currentSlide = index;
 
@@ -33,8 +33,8 @@ gameContent.forEach(game => {
         description[currentSlide].classList.add("active");
         diamonds[currentSlide].classList.add("active");
 
-        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0,true]}',"*");
-        media[currentSlide].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*");
+       //media[currentSlide].contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0,true]}',"*");
+       //media[currentSlide].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*");
     }
 
     function GoRight()
