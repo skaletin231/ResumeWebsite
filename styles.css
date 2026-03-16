@@ -139,7 +139,7 @@ li,
 }
 
 @media only screen and (max-width: 600px) {
-    .diamond {
+    .main-page .diamond {
         display: none; /* Hides the element completely */
     }
 
