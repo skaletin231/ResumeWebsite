@@ -392,6 +392,11 @@ button.content-button
     padding: 0 5rem;
 }
 
+.seven-wonders .media-container
+{
+    aspect-ratio: 13 / 9;
+}
+
 .example-section > div
 {
     margin: 1.6rem 0;
@@ -403,7 +408,7 @@ button.content-button
     border-width: 3px;
     border-style: solid;
 
-    object-fit: cover;
+    object-fit: fill;
     width: 100%;
     height: 100%;
 }
