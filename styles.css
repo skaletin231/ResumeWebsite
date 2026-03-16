@@ -27,6 +27,16 @@ hr
     border-color: black;
 }
 
+a
+{
+    color: #47A9FF;
+}
+
+a:visited
+{
+    color: #47A9FF;
+}
+
 .section
 {
     margin: 3.5rem 0;
@@ -226,6 +236,11 @@ button.hover-button:hover
 }
 
 /*RESUME PAGE USS*/
+.resume-link 
+{
+    font-size: 1.2rem;
+}
+
 .return-home
 {
     color: black;
