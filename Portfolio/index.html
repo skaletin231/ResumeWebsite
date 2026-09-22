@@ -1,98 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" />
     <script src="../Javascript/carousel.js" defer></script>
-</head>
-<body class="portfolio-page">
+  </head>
+  <body class="portfolio-page">
     <div class="background"></div>
     <div class="container">
-        <a class="inter return-home" href="../">&lt; Return to Home</a>
-        <h1 class="cantata-one">Portfolio</h1>
-        <hr>
-        <div class="top-buttons section">
-            <button class="alegreya-sans hover-button content-button active" aria-label="Game 1">
-                7 Wonders
-            </button>
-            <button class="alegreya-sans hover-button content-button" aria-label="Game 2">
-                Galactic Jam
-            </button>
-        </div>
-        <div class="content-section">
-            <div class="game active seven-wonders"> <!-- 7 wonders -->
-                <div><!-- static half -->
-                    <div class="section">
-                        <h2 class="section-header"><strong>Overview:</strong></h2>
-                        <p>This project was created alone over a period of approximately 6 months. It is a digital implementation of the physical board game 7 Wonders Duel that handles all gameplay and rules functionality for the user. This was created purely as a learning experience and is not publicly available anywhere.</p>
-                    </div>
-                    <div class="section">
-                        <h2 class="section-header"><strong>Key Takeaways:</strong></h2>
-                        <ul>
-                            <li><strong>Unity Events:</strong> Enabled loose coupling of components, making the system more modular and easily expandable for future changes.</li>
-                            <li><strong>Interfaces:</strong> Used to create generic reusable abilities, allowing for easy implementation of new cards with minimal additional code.</li>
-                            <li><strong>Polymorphism:</strong> Allowed different card types to handle their own independent behaviors, reducing the need for other systems to differentiate them.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="example-section"> <!-- slides half -->
-                    <div class="media-container"> <!-- arrows and media -->
-                        <button class="left direction-buttons" aria-label="Previous slide">&#10094;</button>
-                        <video class="example-media active" autoplay loop muted playsinline><source  src="../Videos/Board Game/Game Start.mp4" type="video/mp4">Not Suported</video>
-                        <video class="example-media" autoplay loop muted playsinline><source  src="../Videos/Board Game/Sell Card And Flip.mp4" type="video/mp4">Not Suported</video>
-                        <video class="example-media" autoplay loop muted playsinline><source  src="../Videos/Board Game/Build Wonder.mp4" type="video/mp4">Not Suported</video>
-                        <button class="right direction-buttons" aria-label="Next slide">&#10095;</button>
-                    </div>
-                    <div class="dot-container padding-for-arrows"> <!-- dots -->
-                        <div class="diamond active"></div>
-                        <div class="diamond"></div>
-                        <div class="diamond"></div>
-                    </div>
-                    <div class="padding-for-arrows"> <!-- text -->
-                        <p class="active description">Game start involves two players selecting their starting wonders from a randomly selected group of eight wonders.</p>
-                        <p class="description">The cards all extend the same base class and use polymorphism so all systems can interact with them without needing to differentiate type.</p>
-                        <p class="description">Effects were created using a base interface that each affect class inherits. Wonders would then trigger any number of these effects one at a time allowing for rapid creation of new wonders.</p>      
-                    </div>
-                </div>            
+      <a class="inter return-home" href="../">&lt; Return to Home</a>
+      <h1 class="cantata-one">Portfolio</h1>
+      <hr />
+      <div class="top-buttons section">
+        <button
+          class="alegreya-sans hover-button content-button active"
+          aria-label="Game 1"
+        >
+          Defuser
+        </button>
+        <button
+          class="alegreya-sans hover-button content-button"
+          aria-label="Game 2"
+        >
+          7 Wonders
+        </button>
+        <button
+          class="alegreya-sans hover-button content-button"
+          aria-label="Game 3"
+        >
+          Galactic Jam
+        </button>
+      </div>
+      <div class="content-section">
+        <div class="game active defuser">
+          <!-- defuser -->
+          <div>
+            <!-- static half -->
+            <div class="section">
+              <h2 class="section-header"><strong>Overview:</strong></h2>
+              <p>
+                This was a personal project done to help fix an issue I had: me
+                and my friends enjoyed playing games like code names, but did
+                not like the setup and the lack of customization in words used.
+                As such, I made a website that handled all the setup and let
+                users create their own decks of words so they could make fun
+                themed decks to pay with friends.
+              </p>
             </div>
-
-
-            <div class="game">  <!-- song game -->
-                <div><!-- static half -->
-                    <div class="section">
-                        <h2 class="section-header"><strong>Overview:</strong></h2>
-                        <p>This was the final project of a college game programming course. Working in a group of three students, we developed a 3/4 view action game with multiple enemies, levels, and buffs.</p>
-                    </div>
-                    <div class="section">
-                        <h2 class="section-header"><strong>Key Takeaways:</strong></h2>
-                        <ul>
-                            <li><strong>Enemy State Machines:</strong> One boss was developed with multiple attacks and animations using a state based system. This method made the enemies functionality easy to extend.</li>
-                            <li><strong>Time Management:</strong> This project was assigned day one of class and due the final day. Working in a team of three, when had to quickly learn to manage our time, split work cleanly, and find a work flow that would allow us to finish a full game in just under four months.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="example-section"> <!-- slides half -->
-                    <div class="media-container"> <!-- arrows and media -->
-                        <button class="left direction-buttons" aria-label="Previous slide">&#10094;</button>
-                        <video class="example-media active" autoplay loop muted playsinline><source  src="../Videos/Galactic Jam/Boss - Full Fight.mp4" type="video/mp4">Not Suported</video>
-                        <video class="example-media" autoplay loop muted playsinline><source  src="../Videos/Galactic Jam/Enemies.mp4" type="video/mp4">Not Suported</video>
-                        <video class="example-media" autoplay loop muted playsinline><source  src="../Videos/Galactic Jam/Speed Boost.mp4" type="video/mp4">Not Suported</video>
-                        <button class="right direction-buttons" aria-label="Next slide">&#10095;</button>
-                    </div>
-                    <div class="dot-container padding-for-arrows"> <!-- dots -->
-                        <div class="diamond active"></div>
-                        <div class="diamond"></div>
-                        <div class="diamond"></div>
-                    </div>
-                    <div class="padding-for-arrows"> <!-- text -->
-                        <p class="active description">This boss was implemented with four distinct states that controlled the entire fight and allowed for more attacks to be easily added on when time permited.</p>
-                        <p class="description">I developed multiple enemies with different attacks that all inherit from the same base script.</p>
-                        <p class="description">Multiple buffs were developed that each interact with the users in different ways.</p>      
-                    </div>
-                </div>            
+            <div class="section">
+              <h2 class="section-header"><strong>Key Takeaways:</strong></h2>
+              <ul>
+                <li>
+                  <strong>React: </strong>Working fully alone in the react
+                  framework meant getting really comfortable with every part of
+                  it.
+                </li>
+                <li>
+                  <strong>Auth0: </strong>While I had been on teams that used
+                  accounts before, I had never set it up myself. This project
+                  taught me a lot about Auth0's method of authorization and how
+                  to tie that into the accounts on my website seamlessly.
+                </li>
+                <li>
+                  <strong>GraphqL and MongoDB: </strong>GraphQL and MongoDB was
+                  my first time working with a NoSQL database, and as such,
+                  there was a lot to learn and discover about the pros and cons
+                  of using that system. I leanred a lot about managing
+                  connections, shaping the data on the database, and
+                  sending/recieving that info back and forth.
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="example-section">
+            <!-- slides half -->
+            <div class="media-container">
+              <!-- arrows and media -->
+              <button
+                class="left direction-buttons"
+                aria-label="Previous slide"
+              >
+                &#10094;
+              </button>
+              <img
+                class="example-media active"
+                  src="../Images/DefuserLogin.png"
+              >
+              </img>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Defuser/DefuserGameplay.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Defuser/defuserDecks.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <img
+                class="example-media"
+                  src="../Images/Cookies.png"
+              >
+              </img>
+              <button class="right direction-buttons" aria-label="Next slide">
+                &#10095;
+              </button>
+            </div>
+            <div class="dot-container padding-for-arrows">
+              <!-- dots -->
+              <div class="diamond active"></div>
+              <div class="diamond"></div>
+              <div class="diamond"></div>
+              <div class="diamond"></div>
+            </div>
+            <div class="padding-for-arrows">
+              <!-- text -->
+              <p class="active description">
+                Auth0 was used in order to offload authorization and security
+                management onto a trusted 3rd part site instead of trying to
+                implament every part of it myself.
+              </p>
+              <p class="description">
+                GraphQL subscriptions are used in order to maintain an active
+                connection and ensure concistent game states between players.
+              </p>
+              <p class="description">
+                Once authorized, users are able to create and share custom decks
+                in order to tailor their expeirnece to themselves.
+              </p>
+              <p class="description">
+                While users must be logged in to create decks, the website uses
+                session cookies in order to let guests still play with public
+                decks or already made lobbies.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="game seven-wonders">
+          <!-- 7 wonders -->
+          <div>
+            <!-- static half -->
+            <div class="section">
+              <h2 class="section-header"><strong>Overview:</strong></h2>
+              <p>
+                This project was created alone over a period of approximately 6
+                months. It is a digital implementation of the physical board
+                game 7 Wonders Duel that handles all gameplay and rules
+                functionality for the user. This was created purely as a
+                learning experience and is not publicly available anywhere.
+              </p>
+            </div>
+            <div class="section">
+              <h2 class="section-header"><strong>Key Takeaways:</strong></h2>
+              <ul>
+                <li>
+                  <strong>Unity Events:</strong> Enabled loose coupling of
+                  components, making the system more modular and easily
+                  expandable for future changes.
+                </li>
+                <li>
+                  <strong>Interfaces:</strong> Used to create generic reusable
+                  abilities, allowing for easy implementation of new cards with
+                  minimal additional code.
+                </li>
+                <li>
+                  <strong>Polymorphism:</strong> Allowed different card types to
+                  handle their own independent behaviors, reducing the need for
+                  other systems to differentiate them.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="example-section">
+            <!-- slides half -->
+            <div class="media-container">
+              <!-- arrows and media -->
+              <button
+                class="left direction-buttons"
+                aria-label="Previous slide"
+              >
+                &#10094;
+              </button>
+              <video
+                class="example-media active"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source
+                  src="../Videos/Board Game/Game Start.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Board Game/Sell Card And Flip.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Board Game/Build Wonder.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <button class="right direction-buttons" aria-label="Next slide">
+                &#10095;
+              </button>
+            </div>
+            <div class="dot-container padding-for-arrows">
+              <!-- dots -->
+              <div class="diamond active"></div>
+              <div class="diamond"></div>
+              <div class="diamond"></div>
+            </div>
+            <div class="padding-for-arrows">
+              <!-- text -->
+              <p class="active description">
+                Game start involves two players selecting their starting wonders
+                from a randomly selected group of eight wonders.
+              </p>
+              <p class="description">
+                The cards all extend the same base class and use polymorphism so
+                all systems can interact with them without needing to
+                differentiate type.
+              </p>
+              <p class="description">
+                Effects were created using a base interface that each affect
+                class inherits. Wonders would then trigger any number of these
+                effects one at a time allowing for rapid creation of new
+                wonders.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="game">
+          <!-- song game -->
+          <div>
+            <!-- static half -->
+            <div class="section">
+              <h2 class="section-header"><strong>Overview:</strong></h2>
+              <p>
+                This was the final project of a college game programming course.
+                Working in a group of three students, we developed a 3/4 view
+                action game with multiple enemies, levels, and buffs.
+              </p>
+            </div>
+            <div class="section">
+              <h2 class="section-header"><strong>Key Takeaways:</strong></h2>
+              <ul>
+                <li>
+                  <strong>Enemy State Machines:</strong> One boss was developed
+                  with multiple attacks and animations using a state based
+                  system. This method made the enemies functionality easy to
+                  extend.
+                </li>
+                <li>
+                  <strong>Time Management:</strong> This project was assigned
+                  day one of class and due the final day. Working in a team of
+                  three, when had to quickly learn to manage our time, split
+                  work cleanly, and find a work flow that would allow us to
+                  finish a full game in just under four months.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="example-section">
+            <!-- slides half -->
+            <div class="media-container">
+              <!-- arrows and media -->
+              <button
+                class="left direction-buttons"
+                aria-label="Previous slide"
+              >
+                &#10094;
+              </button>
+              <video
+                class="example-media active"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source
+                  src="../Videos/Galactic Jam/Boss - Full Fight.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Galactic Jam/Enemies.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <video class="example-media" autoplay loop muted playsinline>
+                <source
+                  src="../Videos/Galactic Jam/Speed Boost.mp4"
+                  type="video/mp4"
+                />
+                Not Suported
+              </video>
+              <button class="right direction-buttons" aria-label="Next slide">
+                &#10095;
+              </button>
+            </div>
+            <div class="dot-container padding-for-arrows">
+              <!-- dots -->
+              <div class="diamond active"></div>
+              <div class="diamond"></div>
+              <div class="diamond"></div>
+            </div>
+            <div class="padding-for-arrows">
+              <!-- text -->
+              <p class="active description">
+                This boss was implemented with four distinct states that
+                controlled the entire fight and allowed for more attacks to be
+                easily added on when time permited.
+              </p>
+              <p class="description">
+                I developed multiple enemies with different attacks that all
+                inherit from the same base script.
+              </p>
+              <p class="description">
+                Multiple buffs were developed that each interact with the users
+                in different ways.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
